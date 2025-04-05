@@ -75,7 +75,7 @@ function getCadastros(nome) {
             headers: { 'Content-Type': 'application/json' },
         })
         .then(resp => resp.json())
-        .then(dados => listarCadastros(dados))
+        .then(dados => listarCadastros(dados.message))
         .catch(err => console.error("Erro ao buscar dados:", err))
         .finally(function () {
             fecharLoading()

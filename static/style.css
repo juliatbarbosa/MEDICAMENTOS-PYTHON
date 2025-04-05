@@ -35,7 +35,7 @@ body {
 #imgLoading {
 	width: 40px;
 	height: 40px;
-	-webkit-mask: url('../img/loading.png') no-repeat center/contain;
+	-webkit-mask: url('../../img/loading.png') no-repeat center/contain;
 }
 
 /* ######### TOAST ######### */
@@ -170,9 +170,11 @@ header img {
 	height: calc(100vh - 300px);
 }
 
-.seminfo img {
+#imgTriste {
 	margin: 0px auto;
 	width: 70px;
+	height: 70px;
+	-webkit-mask: url('img/triste.png') no-repeat center/contain;
 }
 
 .seminfo .mensagem {

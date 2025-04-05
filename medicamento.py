@@ -24,11 +24,11 @@ def medicamento():
 
         if len(rows) == 0:
             return (
-                jsonify({"message": "Não há medicamento cadastrado!", "success": False}),
+                jsonify({"message": [], "success": False}),
                 404,
             )
 
-        resp = jsonify(rows)
+        resp = jsonify({"message": rows, "success": True})
         resp.status_code = 200
 
         return resp
